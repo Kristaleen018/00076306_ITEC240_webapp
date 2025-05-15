@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Kristaleen Jailal"> 
+		<title> Ministry of Tourism, Culture and the Arts </title>
+		<link rel="stylesheet" href="../CSS/tourism.css"> 
+	</head>
+	
+	<body>
+			<header>
+				<h1> Tourist Destination&colon; Tobago </h1>
+			</header>
+			
+			<nav>
+				<div class="flex-container">
+					<div><a href="../index.html"> Home </a> </div>
+					<div><a href="about.html"> About </a> </div>
+					<div><a href="form.html" class="active"> Register </a> </div>
+					<div><a href="site.html"> Sites </a> </div>
+					<div><a href="food.html"> Food </a> </div>
+					<div><a href="test.html"> Testimonial </a> </div>
+				</div>
+			</nav>
+			
+			<h2> Registration And Login Form </h2>
+			
+			<main id="form-grid">
+			<div class="grid-column">
+				<img src="../IMG/walk.jpg" alt="An image of a boardwalk">
+			</div>
+			
+			<div class="form-column">
+			<form method="get" action="response.html">
+			<fieldset>
+			<legend> User Information </legend>
+				<label> &ast;Title&colon; </label>
+					<select id="title" name="title">
+						<option value="" selected="selected"> Select a title </option>
+						<option value="Ms."> Ms. </option>
+						<option value="Mrs."> Mrs. </option>
+						<option value="Mr."> Mr. </option>
+					</select> <br> <br>
+				<label> &ast;Name&colon; </label>
+					<input type="text" id="fullname" name="fname" size="30" placeholder="Enter your full name"> <br> <br>
+				
+				<label> &ast;Date of Birth&colon; </label>
+					<input type="date" id="dob" name="dob"> <br> <br>
+					
+				<label> &ast;Gender&colon; </label>	
+					Male<input type="radio" id="m_gender" name="gender" value="Male">
+					Female<input type="radio" id="f_gender" name="gender" value="Female"> <br> <br>
+				
+				<label> &ast;Hobbies&colon; </label>
+					Travelling<input type="checkbox" id="t_hobby" name="hobby" value="Travelling"> &nbsp; &nbsp;
+					Hiking<input type="checkbox" id="h_hobby" name="hobby" value="Hiking"> &nbsp; &nbsp;
+					Exploring<input type="checkbox" id="e_hobby" name="hobby" value="Exploring"> 	
+					Swimming<input type="checkbox" id="s_hobby" name="hobby" value="Swimming"> <br> <br>
+					
+				<label> &ast;Places Visited&colon; </label>
+					<textarea id="visited" name="visited" rows="5" cols="30" placeholder="Enter Places Visited"></textarea> <br> <br>
+					
+			
+			</fieldset>
+			
+			<fieldset>
+			<legend> Login </legend>
+				<label> &ast;Username&colon; </label>
+					<input type="text" id="username" name="uname" size="30"> <br> <br>
+					
+				<label>	&ast;Password </label>
+					<input type="password" id="pwd" name="pwd" maxlength="10"> <br> <br>
+					
+				<label> Confirm Password&colon; </label>
+					<input type="password" id="cpword" name="cpword" maxlength="10"> <br> <br>
+			</fieldset>
+			<br> 
+			<span id="buttons">
+					<input type="submit" value="Register" class="button"> &nbsp; &nbsp; &nbsp;
+					<input type="reset" value="Clear" class="button">
+			</span>
+			</form>
+			</div>
+				
+			</main>
+			<footer id="footer">
+				<h3> &copy;Ministry of Tourism, Culture and the Arts </h3>
+			</footer>	
+		
+	</body>
+	
+</html>
